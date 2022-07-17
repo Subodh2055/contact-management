@@ -1,1 +1,74 @@
-<p>contact-manager works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <p class="h3">
+        Contact Application
+        <a class="btn btn-success btn-sm" href="/contacts/add">Add Contact</a>
+      </p>
+      <p class="fst-italic" mt-5>
+        It is not so much for its beauty that the forest makes a claim upon
+        men's hearts, as for that subtle something, that quality of air that
+        emanation from old trees, that so wonderfully changes and renews a weary
+        spirit.
+      </p>
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search contact"
+            />
+          </div>
+          <div class="col-md-6">
+            <input type="Submit" class="btn btn-outline-dark" value="search" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--Card Design-->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card list-group-item-success">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-4">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/219/219983.png?w=360"
+                alt="user"
+                class="contact-img"
+              />
+            </div>
+            <div class="col-sm-6">
+              <ul class="list-group align-item-center">
+                <li class="list-group-item">
+                  Name: <span class="fw-bold"></span>Name
+                </li>
+                <li class="list-group-item">
+                  Email: <span class="fw-bold"></span>abc@gmail.com
+                </li>
+                <li class="list-group-item">
+                  Mobile: <span class="fw-bold"></span>9842495838
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-1 justify-content-center align-item-center">
+              <a routerLink="/contacts/view/:contactId" class="btn btn-warning"
+                >view</a
+              >
+              <pre></pre>
+              <a routerLink="/contacts/edit/:contactId" class="btn btn-success"
+                >edit</a
+              >
+              <pre></pre>
+              <button class="btn btn-danger">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
