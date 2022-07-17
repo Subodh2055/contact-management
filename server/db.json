@@ -1,0 +1,84 @@
+{
+  "contacts":[
+    {
+      "id":"s1",
+      "name":"subodh",
+      "email":"info@subodh.com",
+      "title":"Developer",
+      "mobile":"9842485838",
+      "photo":"https://media-exp1.licdn.com/dms/image/C4D16AQHRXGoEXUu_ZQ/profile-displaybackgroundimage-shrink_350_1400/0/1657552210083?e=1663804800&v=beta&t=hMDiw5_Y2Rt2iQM2bSjuH1tXTwy9LuboGlfOKuHr_Ek",
+      "groupId":"2"
+    },
+        {
+      "id":"s2",
+      "name":"shyam",
+      "email":"info@shyam.com",
+      "title":"Network Administator",
+      "mobile":"9843485838",
+      "photo":"https://media-exp1.licdn.com/dms/image/C4D16AQHRXGoEXUu_ZQ/profile-displaybackgroundimage-shrink_350_1400/0/1657552210083?e=1663804800&v=beta&t=hMDiw5_Y2Rt2iQM2bSjuH1tXTwy9LuboGlfOKuHr_Ek",
+      "groupId":"3"
+    },
+        {
+      "id":"s3",
+      "name":"sagar",
+      "email":"info@sagar.com",
+      "title":"Youtuber",
+      "mobile":"9842485738",
+      "photo":"https://media-exp1.licdn.com/dms/image/C4D16AQHRXGoEXUu_ZQ/profile-displaybackgroundimage-shrink_350_1400/0/1657552210083?e=1663804800&v=beta&t=hMDiw5_Y2Rt2iQM2bSjuH1tXTwy9LuboGlfOKuHr_Ek",
+      "groupId":"4"
+    },
+        {
+      "id":"s4",
+      "name":"suman",
+      "email":"info@suman.com",
+      "title":"Traveller",
+      "mobile":"9842489838",
+      "photo":"https://media-exp1.licdn.com/dms/image/C4D16AQHRXGoEXUu_ZQ/profile-displaybackgroundimage-shrink_350_1400/0/1657552210083?e=1663804800&v=beta&t=hMDiw5_Y2Rt2iQM2bSjuH1tXTwy9LuboGlfOKuHr_Ek",
+      "groupId":"5"
+    },
+        {
+      "id":"s5",
+      "name":"Ram",
+      "email":"info@ram.com",
+      "title":"Chor",
+      "mobile":"9842785838",
+      "photo":"https://media-exp1.licdn.com/dms/image/C4D16AQHRXGoEXUu_ZQ/profile-displaybackgroundimage-shrink_350_1400/0/1657552210083?e=1663804800&v=beta&t=hMDiw5_Y2Rt2iQM2bSjuH1tXTwy9LuboGlfOKuHr_Ek",
+      "groupId":"6"
+    },
+        {
+      "id":"s6",
+      "name":"sabal",
+      "email":"info@sabal.com",
+      "title":"Daka",
+      "mobile":"9892485838",
+      "photo":"https://media-exp1.licdn.com/dms/image/C4D16AQHRXGoEXUu_ZQ/profile-displaybackgroundimage-shrink_350_1400/0/1657552210083?e=1663804800&v=beta&t=hMDiw5_Y2Rt2iQM2bSjuH1tXTwy9LuboGlfOKuHr_Ek",
+      "groupId":"7"
+    }
+  ],
+  "groups":[
+    {
+      "id":"1",
+      "name": "Collegue"
+    },
+    {
+      "id":"2",
+      "name": "Family"
+    },
+    {
+      "id":"3",
+      "name": "Friends"
+    },
+    {
+      "id":"4",
+      "name": "Service"
+    },
+    {
+      "id":"5",
+      "name": "Social"
+    },
+    {
+      "id":"6",
+      "name": "Data Anaylist"
+    }
+  ]
+}
