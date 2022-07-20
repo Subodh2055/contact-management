@@ -21,7 +21,7 @@ const routes: Routes = [
     component: AddComponentComponent,
   },
   {
-    path: 'contacts/edit/: contactId',
+    path: 'contacts/edit/:contactId',
     component: EditContactComponent,
   },
   {
