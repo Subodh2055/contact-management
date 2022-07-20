@@ -28,37 +28,50 @@
     </div>
   </div>
 </div>
-<pre>{{ contacts | json }}</pre>
+<!--Condition Based loading-->
+<div *ngIf="loading">
+  <app-spinner></app-spinner>
+</div>
 
+<!--Display error message-->
+<div *ngIf="!loading && errorMessage">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p class="h4 text-danger fw-bold">{{ errorMessage }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <pre>{{ contacts | json }}</pre> -->
 <!--Card Design-->
-<div class="container mt-5">
+<div class="container mt-5" *ngIf="!loading && contacts.length > 0">
   <div class="row">
-    <div class="col-md-6">
-      <div class="card list-group-item-success">
+    <div class="col-md-6" *ngFor="let contact of contacts">
+      <div class="card list-group-item-success shadow-lg my-2">
         <div class="card-body">
           <div class="row">
             <div class="col-sm-4">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/219/219983.png?w=360"
-                alt="user"
-                class="contact-img"
-              />
+              <img [src]="contact.photo" alt="user" class="contact-img" />
             </div>
             <div class="col-sm-6">
               <ul class="list-group align-item-center">
                 <li class="list-group-item">
-                  Name: <span class="fw-bold"></span>Name
+                  Name: <span class="fw-bold"></span>{{ contact.name }}
                 </li>
                 <li class="list-group-item">
-                  Email: <span class="fw-bold"></span>abc@gmail.com
+                  Email: <span class="fw-bold"></span>{{ contact.email }}
                 </li>
                 <li class="list-group-item">
-                  Mobile: <span class="fw-bold"></span>9842495838
+                  Mobile: <span class="fw-bold"></span>{{ contact.mobile }}
                 </li>
               </ul>
             </div>
             <div class="col-sm-1 justify-content-center align-item-center">
-              <a routerLink="/contacts/view/:contactId" class="btn btn-warning"
+              <a
+                routerLink="/contacts/view/{{ contact.id }}"
+                class="btn btn-warning"
                 >view</a
               >
               <pre></pre>

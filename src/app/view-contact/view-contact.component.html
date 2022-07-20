@@ -11,39 +11,54 @@
     </div>
   </div>
 </div>
+<!--condition based spinner and error Message code here-->
+<div *ngIf="loading">
+  <app-spinner></app-spinner>
+</div>
+
+<!--Display error message-->
+<div *ngIf="!loading && errorMessage">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p class="h4 text-danger fw-bold">{{ errorMessage }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!--View Contact Details-->
-<div class="container">
+<div *ngIf="!loading && isNotEmpty()" class="container">
   <div class="row align-items-center">
     <div class="col-sm-2">
-      <img
-        src="https://cdn-icons-png.flaticon.com/512/219/219983.png?w=360"
-        alt=" user"
-        class="contact-img-details"
-      />
+      <img [src]="contact.photo" alt=" user" class="contact-img-details" />
     </div>
     <div class="col-sm-6">
       <ul class="list-group align-item-center">
         <li class="list-group-item list-group-item-success">
-          Name: <span class="fw-bold"></span>Name
+          Name: <span class="fw-bold"></span>{{ contact.name }}
         </li>
         <li class="list-group-item list-group-item-success">
-          Email: <span class="fw-bold"></span>abc@gmail.com
+          Email: <span class="fw-bold"></span>{{ contact.email }}
         </li>
         <li class="list-group-item list-group-item-success">
-          Mobile: <span class="fw-bold"></span>9842495838
+          Mobile: <span class="fw-bold"></span>{{ contact.mobile }}
         </li>
         <li class="list-group-item list-group-item-success">
-          Company: <span class="fw-bold"></span>Name
+          Company: <span class="fw-bold"></span>{{ contact.company }}
         </li>
         <li class="list-group-item list-group-item-success">
-          Title: <span class="fw-bold"></span>title
+          Title: <span class="fw-bold"></span>{{ contact.title }}
         </li>
         <li class="list-group-item list-group-item-success">
-          Group Name: <span class="fw-bold"></span>Family
+          Group Name: <span class="fw-bold"></span>{{ group.name }}
         </li>
       </ul>
     </div>
   </div>
+  <!-- <pre>{{ contactId }}</pre> -->
+  <!-- <pre>{{ contact | json }}</pre> -->
+  <!-- <pre>{{ group | json }}</pre> -->
   <div class="row mt-4">
     <div class="col">
       <a routerLink="/" class="btn btn-warning">Go Back</a>
